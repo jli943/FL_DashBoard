@@ -1,0 +1,17 @@
+[
+  {
+    "round": 1,
+    "aggregation_time": 5.5,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 2.3
+  },
+
+  {
+    "round": 2,
+    "aggregation_time": 6.3,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 1.9
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "node_id": 1,
+  "description": "MedMNIST dataset partition for node <node ID>??",
+  "num_classes": 10,
+  "class_names": [
+    "AbdomenCT",
+    "BreastMRI",
+    "CXR",
+    "ChestCT",
+    "Hand",
+    "HeadCT",
+    "Abnormal",
+    "BreastUS",
+    "Lung",
+    "XR_Wrist"
+  ],
+  "train": [
+    {
+      "image": "/path/to/image1.png",
+      "label": 1
+    },
+    {
+      "image": "/path/to/image2.png",
+      "label": 3
+    },
+    {
+      "image": "/path/to/imageN.png",
+      "label": 9
+    }
+  ],
+  "test": [
+    {
+      "image": "/path/to/test_image1.png",
+      "label": 2
+    },
+    {
+      "image": "/path/to/test_image2.png",
+      "label": 6
+    },
+    {
+      "image": "/path/to/test_imageM.png",
+      "label": 4
+    }
+  ]
+}
