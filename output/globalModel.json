@@ -6,12 +6,109 @@
     "model": "base64 encoded model weights",
     "download_latency": 2.3
   },
-
   {
     "round": 2,
     "aggregation_time": 6.3,
     "model_size": 1024,
     "model": "base64 encoded model weights",
     "download_latency": 1.9
+  },
+  {
+    "round": 3,
+    "aggregation_time": 4.8,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 2.1
+  },
+  {
+    "round": 4,
+    "aggregation_time": 6.1,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 2.6
+  },
+  {
+    "round": 5,
+    "aggregation_time": 5.9,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 2.2
+  },
+  {
+    "round": 6,
+    "aggregation_time": 6.5,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 1.8
+  },
+  {
+    "round": 7,
+    "aggregation_time": 4.3,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 2.5
+  },
+  {
+    "round": 8,
+    "aggregation_time": 5.7,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 1.5
+  },
+  {
+    "round": 9,
+    "aggregation_time": 4.5,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 1.7
+  },
+  {
+    "round": 10,
+    "aggregation_time": 5.2,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 2.0
+  },
+  {
+    "round": 11,
+    "aggregation_time": 5.8,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 2.3
+  },
+  {
+    "round": 12,
+    "aggregation_time": 4.2,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 1.8
+  },
+  {
+    "round": 13,
+    "aggregation_time": 6.2,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 2.1
+  },
+  {
+    "round": 14,
+    "aggregation_time": 5.6,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 2.6
+  },
+  {
+    "round": 15,
+    "aggregation_time": 6.3,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 2.8
+  },
+  {
+    "round": 16,
+    "aggregation_time": 6.8,
+    "model_size": 1024,
+    "model": "base64 encoded model weights",
+    "download_latency": 3.8
   }
 ]

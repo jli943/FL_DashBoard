@@ -6,7 +6,9 @@ const NodeID_data = (props) => {
 
   useEffect(() => {
     const fetchNodeID_data = async () => {
-      const response = await axios.get(`http://${props.ip}:3111/nodeIDData`);
+      const response = await axios.get(
+        `http://${props.ip}:${props.port}/nodeIDData`
+      );
       console.log("response", response.data);
       setNodeID_data(response.data ? response.data : {});
     };
@@ -15,17 +17,21 @@ const NodeID_data = (props) => {
   }, [props.ip]);
 
   return (
-    <div>
-      <h1>NodeID_data</h1>
-      <div>
-        {Object.keys(nodeID_data).length > 0 ? (
-          <div>
-            <h2>node_id: {nodeID_data.node_id}</h2>
-            <p>class_names: {nodeID_data.class_names}</p>
-          </div>
-        ) : (
-          <h2>Computing....</h2>
-        )}
+    <div className="max-w-md mx-auto rounded-md shadow-md overflow-hidden">
+      <div className="bg-gradient-to-r from-pink-500 to-purple-500 px-6 py-4">
+        <h1 className="text-2xl font-bold text-white">NodeID_data</h1>
+        <div className="text-gray-200 text-sm">
+          {Object.keys(nodeID_data).length > 0 ? (
+            <div>
+              <h2 className="text-lg font-bold mb-2">
+                node_id: {nodeID_data.node_id}
+              </h2>
+              <p className="mb-4">class_names: {nodeID_data.class_names}</p>
+            </div>
+          ) : (
+            <h2 className="text-lg font-bold">Computing....</h2>
+          )}
+        </div>
       </div>
     </div>
   );

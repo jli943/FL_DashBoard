@@ -10,6 +10,7 @@ const PlotComponent = (props) => {
   const [modalStyle, setModalStyle] = useState({});
   const [roundDatainGlobalModel, setRoundDatainGlobalModel] = useState({});
   const [nodeIP, setNodeIP] = useState("");
+  const [nodePort, setNodePort] = useState("");
   const [cellName, setCellName] = useState("");
   const [cellRound, setCellRound] = useState("");
 
@@ -54,6 +55,8 @@ const PlotComponent = (props) => {
       console.log("nodeIP", node.node_info.ip);
       const nodeIP = node.node_info.ip ? node.node_info.ip : "";
       setNodeIP(nodeIP);
+      const nodePort = node.node_info.port ? node.node_info.port : "";
+      setNodePort(nodePort);
     } else if (cell.getAttribute("name") === "#node/round") {
       const node = nodeLists.find(
         (node) => node.node_id === parseInt(cell.getAttribute("id"), 10)
@@ -61,6 +64,8 @@ const PlotComponent = (props) => {
       console.log("nodeIP", node.node_info.ip);
       const nodeIP = node.node_info.ip ? node.node_info.ip : "";
       setNodeIP(nodeIP);
+      const nodePort = node.node_info.port ? node.node_info.port : "";
+      setNodePort(nodePort);
       setCellName("#node/round");
       setCellRound(cell.getAttribute("round"));
     }
@@ -84,6 +89,7 @@ const PlotComponent = (props) => {
         modalStyle={modalStyle}
         roundDatainGlobalModel={roundDatainGlobalModel}
         nodeIP={nodeIP}
+        nodePort={nodePort}
         cellRound={cellRound}
       />
     </div>
