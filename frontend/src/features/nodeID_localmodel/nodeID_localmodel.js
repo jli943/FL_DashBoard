@@ -65,26 +65,18 @@ const NodeIDLocalModel = (props) => {
   return (
     <div className="max-w-md mx-auto rounded-md shadow-md overflow-hidden">
       <div className="bg-gradient-to-r from-green-500 to-blue-500 px-6 py-4">
-        <h1 className="text-2xl font-bold text-white">NodeID Local Model</h1>
-        <div className="text-gray-200 text-sm">
+        <h2 className="text-lg font-bold text-white">Node - Local Model</h2>
+        <div className="text-gray-200 text-sm font-bold">
           {Object.keys(nodeIDLocalModel).length > 0 ? (
             <div>
-              <h2 className="text-lg font-bold mb-2">
-                Round: {nodeIDLocalModel.round}
-              </h2>
-              <p className="mb-2">
-                Training Time: {nodeIDLocalModel.training_time}
-              </p>
-              <p className="mb-2">Model Size: {nodeIDLocalModel.model_size}</p>
-              <p className="mb-2">
-                Local Model: {nodeIDLocalModel.local_model}
-              </p>
-              <p className="mb-4">
-                Upload Latency: {nodeIDLocalModel.upload_latency}
-              </p>
+              <p>Round: {nodeIDLocalModel.round}</p>
+              <p>Training Time: {nodeIDLocalModel.training_time}</p>
+              <p>Model Size: {nodeIDLocalModel.model_size}</p>
+              <p>Local Model: {nodeIDLocalModel.local_model}</p>
+              <p>Upload Latency: {nodeIDLocalModel.upload_latency}</p>
             </div>
           ) : (
-            <h2 className="text-lg font-bold">Computing....</h2>
+            <h2 className="text-lg font-bold">No Data</h2>
           )}
         </div>
       </div>

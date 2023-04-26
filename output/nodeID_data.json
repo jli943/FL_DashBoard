@@ -1,6 +1,6 @@
 {
-  "node_id": 1,
-  "description": "MedMNIST dataset partition for node <node ID>??",
+  "node_id": 0,
+  "description": "MedMNIST dataset partition for node <node ID>",
   "num_classes": 10,
   "class_names": [
     "AbdomenCT",

@@ -141,7 +141,7 @@ const TableDataComponent = (props) => {
         <td
           onClick={props.handleCellHover}
           name="#round"
-          className="text-center border-2 border-slate-400 py-2 px-4 font-medium hover:bg-gray-200"
+          className="text-center border-2 border-slate-400 font-medium hover:bg-gray-200"
         >
           {round}
         </td>
@@ -162,7 +162,7 @@ const TableDataComponent = (props) => {
               name="#node/round"
               round={round}
               onClick={props.handleCellHover}
-              className={`text-center border-2 border-slate-400 py-2 px-4 ${cellBgColor} ${cellTextColor} hover:bg-gray-200`}
+              className={`text-center border-2 border-slate-400 ${cellBgColor} ${cellTextColor} hover:bg-gray-200`}
             ></td>
           );
         })}
@@ -175,7 +175,7 @@ const TableDataComponent = (props) => {
       <table className="border-collapse border-2 border-slate-400 w-full table-fixed">
         <thead>
           <tr>
-            <th className="text-center border-2 border-slate-400 py-2 px-4 font-bold font-medium bg-gray-200">
+            <th className="text-center border-2 border-slate-400 font-bold font-medium bg-gray-200">
               R\N
             </th>
 
@@ -185,7 +185,7 @@ const TableDataComponent = (props) => {
                 id={node_id}
                 key={node_id}
                 onClick={props.handleCellHover}
-                className="text-center border-2 border-slate-400 py-2 px-4 font-medium font-bold bg-gray-200 hover:bg-gray-300"
+                className="text-center border-2 border-slate-400 font-medium font-bold bg-gray-200 hover:bg-gray-300"
               >
                 {node_id}
               </th>

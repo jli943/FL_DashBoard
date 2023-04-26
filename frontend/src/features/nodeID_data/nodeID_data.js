@@ -19,17 +19,16 @@ const NodeID_data = (props) => {
   return (
     <div className="max-w-md mx-auto rounded-md shadow-md overflow-hidden">
       <div className="bg-gradient-to-r from-pink-500 to-purple-500 px-6 py-4">
-        <h1 className="text-2xl font-bold text-white">NodeID_data</h1>
-        <div className="text-gray-200 text-sm">
+        <h2 className="text-lg font-bold text-white">Node - Data</h2>
+        <div className="text-gray-200 text-sm font-bold">
           {Object.keys(nodeID_data).length > 0 ? (
             <div>
-              <h2 className="text-lg font-bold mb-2">
-                node_id: {nodeID_data.node_id}
-              </h2>
-              <p className="mb-4">class_names: {nodeID_data.class_names}</p>
+              <p> Node ID: {nodeID_data.node_id}</p>
+              <p>Class Number: {nodeID_data.num_classes}</p>
+              <p>Dataset: </p>
             </div>
           ) : (
-            <h2 className="text-lg font-bold">Computing....</h2>
+            <h2 className="text-lg font-bold">No Data</h2>
           )}
         </div>
       </div>
