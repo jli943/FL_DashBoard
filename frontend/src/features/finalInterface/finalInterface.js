@@ -11,7 +11,7 @@ const FinalInterface = () => {
       const response = await axios.get("http://localhost:3111/edgeClientList");
       setEdgeClientList(response.data);
 
-      if (response.data.rounds.length === 5) {
+      if (response.data.length === 5) {
         clearInterval(liveUpdateEdgeClientList);
       }
     };
@@ -31,7 +31,13 @@ const FinalInterface = () => {
   }, []);
 
   return (
-    <div>
+    // <div>
+    //   <PlotComponent
+    //     edgeClientList={edgeClientList}
+    //     globalModel={globalModel}
+    //   />
+    // </div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <PlotComponent
         edgeClientList={edgeClientList}
         globalModel={globalModel}

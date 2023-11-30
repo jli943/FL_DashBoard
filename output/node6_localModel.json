@@ -1,0 +1,26 @@
+[
+  {
+    "role": "Initiator",
+    "round_number": 3,
+    "train_loss": 1.5076372596350582,
+    "train_acc": 47.60423148724331
+  },
+  {
+    "role": "Subleader",
+    "round_number": 3,
+    "train_loss": 1.0852726616642692,
+    "train_acc": 60.156458351853495
+  },
+  {
+    "role": "Worker",
+    "round_number": 5,
+    "train_loss": 0.86635637012395,
+    "train_acc": 67.66823717663793
+  },
+  {
+    "role": "Worker",
+    "round_number": 6,
+    "train_loss": 0.7922151935371485,
+    "train_acc": 71.00186683260735
+  }
+]

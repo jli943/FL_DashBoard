@@ -50,11 +50,12 @@ const NodeIDLocalModel = (props) => {
   useEffect(() => {
     const fetchNodeIDData = async () => {
       const response = await axios.get(
-        `http://${props.ip}:${props.port}/nodeIDLocalModel`
+        // `http://${props.ip}:${props.port}/nodeIDLocalModel`
+        `http://localhost:3111/nodeIDLocalModel?port=${props.port}`
       );
       console.log("response for localmodel", response.data);
       const roundData = response.data.find((object) => {
-        return object.round === parseInt(props.round, 10);
+        return object.round_number === parseInt(props.round, 10);
       });
       console.log("roundData", roundData);
       setNodeIDLocalModel(roundData ? roundData : {});
@@ -69,11 +70,11 @@ const NodeIDLocalModel = (props) => {
         <div className="text-gray-200 text-sm font-bold">
           {Object.keys(nodeIDLocalModel).length > 0 ? (
             <div>
-              <p>Round: {nodeIDLocalModel.round}</p>
-              <p>Training Time: {nodeIDLocalModel.training_time}</p>
-              <p>Model Size: {nodeIDLocalModel.model_size}</p>
-              <p>Local Model: {nodeIDLocalModel.local_model}</p>
-              <p>Upload Latency: {nodeIDLocalModel.upload_latency}</p>
+              <p>Round: {nodeIDLocalModel.round_number}</p>
+              <p>Role: {nodeIDLocalModel.role}</p>
+              <p>Acc: {nodeIDLocalModel.train_acc}</p>
+              <p>Loss: {nodeIDLocalModel.train_loss}</p>
+              {/* <p>Upload Latency: {nodeIDLocalModel.upload_latency}</p> */}
             </div>
           ) : (
             <h2 className="text-lg font-bold">No Data</h2>

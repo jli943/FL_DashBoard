@@ -26,12 +26,12 @@ const GlobalModelTable = (props) => {
         <div className="text-gray-200 text-sm font-bold">
           <p> Round: {props.roundDatainGlobalModel.round} </p>
           <p>
-            Aggregation Time: {props.roundDatainGlobalModel.aggregation_time}
+            Acc: {props.roundDatainGlobalModel.acc}
           </p>
-          <p>Model Size: {props.roundDatainGlobalModel.model_size}</p>
-          <p>Model: {props.roundDatainGlobalModel.model}</p>
+          <p>Loss: {props.roundDatainGlobalModel.loss}</p>
+          {/* <p>Model: {props.roundDatainGlobalModel.model}</p> */}
           <p>
-            Download Latency: {props.roundDatainGlobalModel.download_latency}
+            {/* Download Latency: {props.roundDatainGlobalModel.download_latency} */}
           </p>
         </div>
       </div>

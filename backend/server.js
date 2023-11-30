@@ -21,6 +21,8 @@ app.use("/edgeClientList", require("./routes/edgeClientListRoutes"));
 app.use("/globalModel", require("./routes/globalModelRoutes"));
 app.use("/nodeIDData", require("./routes/nodeIDDataRoutes"));
 app.use("/nodeIDLocalModel", require("./routes/nodeIDLocalModelRoutes"));
+app.use("/relationship", require("./routes/relationshipRoutes"));
+app.use("/accloss", require("./routes/accLossRoutes"));
 
 app.all("*", (req, res) => {
   res.status(404);

@@ -1,0 +1,20 @@
+[
+  {
+    "role": "Worker",
+    "round_number": 4,
+    "train_loss": 0.9491125792264938,
+    "train_acc": 64.69019468397191
+  },
+  {
+    "role": "Worker",
+    "round_number": 5,
+    "train_loss": 0.8589003919200464,
+    "train_acc": 67.65045781847276
+  },
+  {
+    "role": "Initiator",
+    "round_number": 6,
+    "train_loss": 0.7809902598912065,
+    "train_acc": 71.77526891279224
+  }
+]
